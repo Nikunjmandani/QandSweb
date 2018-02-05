@@ -22,7 +22,7 @@ routes.post('/insertTheQands', function (req, res) {
 	var QANDS = require('../models/qandsadd');
 	var newQANDS= QANDS({
 		question: req.body.question,
-		answer: req.body.answer
+		answers: req.body.answer
 	});
   newQANDS.save(function(err, quandss) {
     if (err) {

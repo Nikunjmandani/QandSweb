@@ -8,7 +8,7 @@ var quandsSchema = new Schema({
  // school_id: { type: String, required: true },
  question :{ type: String, required: true},
 //  question_date: Date,
-//  answers: { type: String, required: true},
+  answers: { type: String, required: true},
  // question_date:Date
 //  stud_mname:String,
  // stud_class:String,
