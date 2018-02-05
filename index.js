@@ -21,27 +21,8 @@ app.use(function(req,res,next){
 
 var router = express.Router()
 
-/*router.post('/insertTheQands', function (req, res) {
-  console.log("hello hi");
-    res.send('hello');
-    res :true;
-  })
-  router.get('/',(req,res) => {
-    res.send("GET");
-});
-
-//POST HTTP method to /
-
-router.post('/', (req,res,next) => {
-    res.send("POST");
-
-});
-app.post('/insertTheQands', function(req, res){
-  res.send('Things');
-});
-
-module.exports = router;*/
 app.use('/',routes)
+
 var dbURI="mongodb://localhost:27017/Ivory";
 //put url db url
 mongoose.connect(dbURI , {useMongoClient: true });
