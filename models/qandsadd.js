@@ -4,17 +4,21 @@ var Schema = mongoose.Schema;
 
 // create a schema
 var quandsSchema = new Schema({
- // stud_id: { type: String, required: true},
- // school_id: { type: String, required: true },
- question :{ type: String, required: true},
-//  question_date: Date,
-  answers: { type: String, required: true},
- // question_date:Date
-//  stud_mname:String,
- // stud_class:String,
- // stud_section:String,
- // stud_address:String
-  
+  // stud_id: { type: String, required: true},
+  // school_id: { type: String, required: true },
+  question: { type: String, required: true },
+  //  question_date: Date,
+  answers: { type: String, required: true },
+  company: String,
+  language: String,
+  dateCreated:{ type: Date, default: Date.now },
+  dateUpdated: Date,
+  // question_date:Date
+  //  stud_mname:String,
+  // stud_class:String,
+  // stud_section:String,
+  // stud_address:String
+
 });
 
 // the schema is useless so far
