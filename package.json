@@ -4,7 +4,8 @@
   "description": "middleware to connect to mongo and client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Nikunj Mandani",
   "license": "MIT",
