@@ -23,7 +23,7 @@ var router = express.Router()
 
 app.use('/', routes)
 
-var dbURI = "mongodb://localhost:27017/Ivory";
+var dbURI = "mongodb://nikunj:nik9819@ds147390.mlab.com:47390/ivory";
 //put url db url
 mongoose.connect(dbURI, { useMongoClient: true });
 mongoose.Promise = global.Promise;
