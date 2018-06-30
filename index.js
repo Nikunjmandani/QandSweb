@@ -52,7 +52,7 @@ process.on('SIGINT', function () {
   });
 });
 mongoose.set('debug', true);
-var port = 3001;
-app.listen(port, function () {
-  console.log("server is listening on port :" + port);
+var server = app.listen(process.env.PORT || 3000, function () {
+  var port = server.address().port;
+  console.log("App now running on port", port);
 });
